@@ -120,7 +120,8 @@ const App = () => {
       if(count < answer.length){
         
         setTimeoutInterval(setTimeout(() => {
-          setTemp(temp+answer.charAt(count));
+          const t = temp+answer.charAt(count)
+          setTemp(t);
           setCount(count+1)
         }, 20))
   
